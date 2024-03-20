@@ -18,3 +18,30 @@ class Solution {
         return arr;
     }
 }
+
+
+palindrome
+class Solution {
+    public boolean isPalindrome(int x) {
+        int a,b,c;
+        b=0;
+        a=0;
+        c=x;
+        while(x>=1){
+            a=x%10;
+            x=x/10;
+            b=10*b+a;
+        }
+        if(c==b){
+            return true;
+        }
+
+        else{
+            return false;
+
+        }
+
+
+
+    }
+}
